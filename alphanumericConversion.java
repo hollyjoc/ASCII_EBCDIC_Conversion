@@ -266,6 +266,7 @@ public class alphanumericConversion
             System.exit(0);
         }
     }
+    
     /**
      * Method that intakes userInput, error checks the data, and
      * converts it to ASCII or EBCDIC
@@ -277,13 +278,13 @@ public class alphanumericConversion
         int userChoice;
         Scanner input = new Scanner(System.in);
         
+        //Header for program
         System.out.println("This program is designed to convert ASCII characters"
                 + " to EBDIC characters; utilizing Hexadecimal conversion between"
                 + " the two tables.");
 
-        
         //Variable to keep track of when to "exit"
-        //if x = 0 , program exits
+        //if x = 0 , while loop exits
         int x = 1;
         while (!(x==0))
         {
@@ -331,6 +332,7 @@ public class alphanumericConversion
                             + " in ASCII");
                 }
                 
+                //If not null - outputs conversion
                 else
                 {
                     System.out.println("The ASCII value for " + userValue + " is " +
@@ -339,7 +341,7 @@ public class alphanumericConversion
                 
             }       
             
-                //1 is EBCDIC conversion
+            //1 is EBCDIC conversion
             else if (userChoice == 1)
             {
                String Hex_Char = convertToHex(HexTable(), userValue);
@@ -352,6 +354,7 @@ public class alphanumericConversion
                            + " in EBCDIC");
                }
                
+               //If not null - outputs conversion
                else
                {
                    System.out.println("The EBCDIC value for " + userValue + " is " +
@@ -366,10 +369,9 @@ public class alphanumericConversion
             
             input.nextLine();
         }
-            
+        
         input.close();
     }
-        
 }
 
 
