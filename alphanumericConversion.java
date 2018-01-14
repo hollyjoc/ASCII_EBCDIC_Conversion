@@ -367,7 +367,7 @@ public class alphanumericConversion
                 break;
             }
             
-            //Clears scanner info
+            //Clears scanner object
             input.nextLine();
         }
         
