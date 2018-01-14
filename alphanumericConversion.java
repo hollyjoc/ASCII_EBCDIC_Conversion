@@ -289,8 +289,8 @@ public class alphanumericConversion
         while (!(x==0))
         {
             System.out.println("Type 'exit' <without quotations> to exit program. ");
-            System.out.print("\n Please enter a capital or a lowercase letter - or a"
-                    + " common punctuation character: ");
+            System.out.print("\n Please enter a capital/lowercase letter, a"
+                    + " common punctuation character, or a number: ");
             userValue = input.nextLine();
             
             //Checks to see if input is "exit"
@@ -302,8 +302,8 @@ public class alphanumericConversion
             {
                 System.out.println("Please enter an approved character");
                 System.out.println("Type 'exit' <without quotations> to exit program. ");
-                System.out.print("\n Please enter a capital or a lowercase letter - or a"
-                        + " common punctuation character: ");
+                System.out.print("\n Please enter a capital/lowercase letter, a"
+                        + " common punctuation character, or a number: ");
                 userValue = input.nextLine();
                 
                 //Checks to see if input is "exit"
