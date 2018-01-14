@@ -253,6 +253,10 @@ public class alphanumericConversion
         return EBCDIC_Value;
     }
 
+    /**
+     * Checks to see if input is "exit"
+     * @param toExit - compares if variable is "exit"
+     */
     public static void exit(String toExit)
     {
         if(toExit.equalsIgnoreCase("exit"))
