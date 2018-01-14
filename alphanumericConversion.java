@@ -367,9 +367,11 @@ public class alphanumericConversion
                 break;
             }
             
+            //Clears scanner info
             input.nextLine();
         }
         
+        //Closes scanner object
         input.close();
     }
 }
